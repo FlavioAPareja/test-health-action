@@ -16,6 +16,6 @@ jobs:
         with:
           apps_inventory_url: 'https://17pp30p17d.execute-api.us-east-1.amazonaws.com/test'
           apps_inventory_auth: 'zeD3qUwspYmzPyUcE7fKE8jT2qUgCrWd'
-          availability_percentage: 80
+          availability_percentage: 100
       - run: echo ${{ steps.foo.outputs.summary }}
         shell: bash
