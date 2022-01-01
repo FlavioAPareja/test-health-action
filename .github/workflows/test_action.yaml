@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: '12'
       - id: foo
-        uses: flavioaandres/health-monitor-action@v0.0.0
+        uses: flavioaandres/health-monitor-action@v0.0.10
         with:
           apps_inventory_url: 'https://17pp30p17d.execute-api.us-east-1.amazonaws.com/test/app/lms_api_internal?sections=health'
           apps_inventory_auth: 'zeD3qUwspYmzPyUcE7fKE8jT2qUgCrWd'
