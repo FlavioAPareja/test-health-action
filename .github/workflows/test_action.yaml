@@ -12,8 +12,10 @@ jobs:
         with:
           node-version: '12'
       - id: foo
-        uses: flavioaandres/health-monitor-action@v0.0.1
+        uses: flavioaandres/health-monitor-action@v0.0.2
         with:
-          who-to-greet: 'Mona the Octocat'
+          apps_inventory_url: 'https://17pp30p17d.execute-api.us-east-1.amazonaws.com/test'
+          apps_inventory_auth: 'zeD3qUwspYmzPyUcE7fKE8jT2qUgCrWd'
+          availability_percentage: 80
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
