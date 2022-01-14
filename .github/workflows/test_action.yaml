@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: '12'
       - id: foo
-        uses: flavioaandres/health-monitor-action@1.0.1
+        uses: "condorlabs-actions/health-availability@1.0.1"
         with:
           apps_inventory_url: 'https://17pp30p17d.execute-api.us-east-1.amazonaws.com/test/apps/providers_roster_api?sections=health&secondsAgo=30'
           apps_inventory_auth: 'zeD3qUwspYmzPyUcE7fKE8jT2qUgCrWd'
