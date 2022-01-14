@@ -12,9 +12,10 @@ jobs:
         with:
           node-version: '12'
       - id: foo
-        uses: flavioaandres/health-monitor-action@v1.0.0
+        uses: flavioaandres/health-monitor-action@v1.0.1
         with:
-          apps_inventory_url: 'https://17pp30p17d.execute-api.us-east-1.amazonaws.com/test/app/lms_api_internal?sections=health'
+          apps_inventory_url: 'https://17pp30p17d.execute-api.us-east-1.amazonaws.com/test/apps/providers_roster_api?sections=health&secondsAgo=30'
           apps_inventory_auth: 'zeD3qUwspYmzPyUcE7fKE8jT2qUgCrWd'
+          allow_warn_as_pass: true
           availability_percentage: 80
       - run: echo ${{ steps.foo.outputs.summary }}
