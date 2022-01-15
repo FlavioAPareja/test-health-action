@@ -13,5 +13,5 @@ jobs:
           apps_inventory_url: 'https://apps-inventory.test.cebroker.com/apps/providers_roster_api?sections=health&secondsAgo=30'
           apps_inventory_auth: 'zeD3qUwspYmzPyUcE7fKE8jT2qUgCrWd'
           availability_percentage: 80
-          allow_warn_as_passed: true
+          allow_warn_as_passed: "true"
       - run: echo ${{ steps.foo.outputs.summary }}
